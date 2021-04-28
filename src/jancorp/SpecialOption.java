@@ -30,6 +30,7 @@ public class SpecialOption {
         }
     }
 
+    // Getters
     public String getContent() {
         return content;
     }

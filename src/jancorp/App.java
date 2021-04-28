@@ -5,7 +5,6 @@ import java.util.*;
 public class App {
     // Password generator
     public static void main(String[] args) {
-        Menu.specialCharacterTab();
         String EXIT = "2";
         // Creating object od Scanner
         Scanner scan = new Scanner(System.in);
@@ -27,8 +26,13 @@ public class App {
                     // Menu method
                     Menu.answerOne();
                     final int inputs = scan.nextInt();
-                    Password pass = new Password(inputs);
-                    pass.generatePassword();
+                    if(inputs >= 4){
+                        Password pass = new Password(inputs);
+                        pass.generatePassword();
+                    }
+                    else{
+                        Menu.amountOfCharacters();
+                    }
                 }catch(InputMismatchException e){
                     // Error detected
                     // Menu method
