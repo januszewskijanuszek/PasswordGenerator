@@ -3,10 +3,6 @@ package jancorp;
 import java.util.Scanner;
 
 public class Menu {
-    // Enums
-    private static final String EMPTY = "";
-    private static final String STAR = "-> ";
-
     // Menu void
     static public void menu(){
         System.out.println("Chose:");
