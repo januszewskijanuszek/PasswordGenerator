@@ -5,6 +5,7 @@ import java.util.*;
 public class App {
     // Password generator
     public static void main(String[] args) {
+        Menu.specialCharacterTab();
         String EXIT = "2";
         // Creating object od Scanner
         Scanner scan = new Scanner(System.in);

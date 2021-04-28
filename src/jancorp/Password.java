@@ -20,6 +20,7 @@ public class Password {
         this.charTable = new char[mainCharacterCounter];
         Random rand = new Random();
         for(int i = 0; i < this.charTable.length ; i++){
+            // Menu method
             // Randomising all characters
             this.charTable[i] = (char)(rand.nextInt(92) + 33);
         }
@@ -27,6 +28,9 @@ public class Password {
         Menu.answerApprove(mainCharacterCounter);
         printPassword();
     }
+
+    // Special character include
+    //private void specialCharacter
 
     // Print password
     private void printPassword(){
